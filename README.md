@@ -41,7 +41,7 @@ Please create a pull request here: https://github.com/bonface221/personal-blog/c
 
 [Bonface221](https://github.com/bonface221)
 
-### License ([MIT License](./LICENSE))
+##License ([MIT License](./LICENSE))
 
 This project is licensed under the MIT Open Source license, (c) bonface221
 
