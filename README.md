@@ -34,7 +34,7 @@
 
 Please create a pull request here: https://github.com/bonface221/personal-blog/compare
 
-### Link to view the app (heroku)
+## Link to view the app (heroku)
  deploying in a few 
 
 ## Author
