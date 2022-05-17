@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{%block content %}
+
+
+<div class="container">
+  <h1>Random Quote</h1>
+  <blockquote class="blockquote">
+  <p class="mb-0">{{random_quote.quote}}</p>
+  <footer class="blockquote-footer">By<cite title="Source Title">{{random_quote.author}}</cite></footer>
+</blockquote>
+  
+
+</div>
+<div class="container-fluid home-container">
+  <div class="container home-container">
+  <h1 class="text-center">{{message}}</h1>
+  <hr />
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Blogs</h2>
+			<div class="row box">
+				{% for blog in blogs %}
+				<div class="col-sm-6">
+					<ul class="list-unstyled">
+						<li
+							class="style"
+							style="
+								background-color: antiquewhite;
+								min-height: 29rem;
+								padding: 1.5rem;
+								box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+							"
+						>
+							<h3 class="text-primary">{{blog.title}}</h3>
+							<h4>{{blog.description}}</h4>
+							<p style="color: #ff5421">By: {{blog.user.username}}</p>
+							<a><button class="btn btn-primary btn-sm">Comment</button></a>
+							<a href="/blogs/delete/{{blog.id}}"
+								><button class="btn btn-danger btn-sm">Delete</button></a
+							>
+						</li>
+						<hr />
+						<br />
+					</ul>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+{% endblock %}
