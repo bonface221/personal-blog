@@ -3,7 +3,7 @@
 
 ## Description
 
-   > This app works just like a phonebook
+   > This app works just like a blog app
 
    ![image](./app/static/images/blog_readme.png)
 
